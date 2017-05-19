@@ -29,7 +29,9 @@
 
     <%= link_to 'Back', cocktails_path %>
     </div>
+    <% if @cocktail.picture? %>
     <%= cl_image_tag @cocktail.picture.path, height: 300, width: 400, crop: :fill %>
+    <% end %>
     <%= cl_image_tag("qgdab1zvfyz1xg9uzsvy",
       width: 400, height: 300, crop: :fill) %>
 
