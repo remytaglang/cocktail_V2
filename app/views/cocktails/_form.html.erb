@@ -1,4 +1,17 @@
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name, placeholder: "Mojito" %>
-  <%= f.button :submit, class: "btn btn-primary"  %>
+
+  <%= f.input :picture, as: :attachinary %>
+  <%= f.button :submit, label: "Coucou", class: "btn btn-primary"  %>
 <% end %>
+
+<div id="dropzone">
+  Drop files here
+  <br>
+  Drop files here
+  <br>
+  Drop files here
+  <br>
+  Drop files here
+</div>
+
